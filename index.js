@@ -8,11 +8,10 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // true for 465, false for other ports
   auth: {
-    user: 'chinakageorge.i@gmail.com', // Your email address
-    pass: 'madeoffaith1996' // Your email password or app-specific password
+    user: 'chinakageorge.i@gmail.com', // Your Gmail address
+    pass: 'madeoffaith1996' // Your Gmail password or app-specific password
   }
 });
-
 
 // Create a HTTP server
 const server = http.createServer((req, res) => {
@@ -38,13 +37,13 @@ const server = http.createServer((req, res) => {
         Remember Me: ${formData.remember ? 'Yes' : 'No'}
       `;
 
-      // Set the recipient email addresses
-      const to = 'george@candlelightspecialneeds.org, info@candlelightspecialneeds.org';
+      // Set the recipient email address (your email address)
+      const to = 'george@candlelightspecialneeds.org'; // Replace with your email address
       const subject = 'Form Submission';
 
       // Send the email
       transporter.sendMail({
-        from: formData.email,
+        from: 'chinakageorge.i@gmail.com', // Sender's email address (your Gmail address)
         to,
         subject,
         text: message
@@ -71,23 +70,3 @@ const port = process.env.PORT || 3000;
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-
-
-transporter.sendMail({
-    from: formData.email,
-    to,
-    subject,
-    text: message
-  }, (error, info) => {
-    if (error) {
-      console.error('Error sending email:', error);
-      res.writeHead(500, {'Content-Type': 'text/plain'});
-      res.end('Error: Unable to send email.');
-    } else {
-      console.log('Email sent:', info.response);
-      res.writeHead(200, {'Content-Type': 'text/plain'});
-      res.end('Thank you for your submission. We will get back to you shortly.');
-    }
-  });
-  
