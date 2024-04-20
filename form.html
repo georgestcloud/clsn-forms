@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLSN ccontact form</title>
+    <meta name="description" content="weTSR is a program dedicated to parents, we train you to be a therapist for your child, we support you through the huddles associated with it and we support you!.">
+  <link rel="icon" type="image/png" href="logo.jpeg"> 
+    
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+
+</head>
+
+<body>
+ <div class="header">
+ <img src="logo.jpeg" alt="Logo" class="logo">
+ </div>
+      
+
+      
+
+
+  <h1 class="h">
+  <span data-aos="fade-up" data-aos-delay="100">C</span>
+  <span data-aos="fade-up" data-aos-delay="200">O</span>
+  <span data-aos="fade-up" data-aos-delay="300">N</span>
+  <span data-aos="fade-up" data-aos-delay="400">T</span>
+  <span data-aos="fade-up" data-aos-delay="500">A</span>
+  <span data-aos="fade-up" data-aos-delay="600">C</span>
+  <span data-aos="fade-up" data-aos-delay="700">T</span>
+
+  <span data-aos="fade-up" data-aos-delay="1200">&nbsp;</span>
+  <span data-aos="fade-up" data-aos-delay="1200">&nbsp;</span>
+  
+
+  <span data-aos="fade-up" data-aos-delay="1300">C</span>
+  <span data-aos="fade-up" data-aos-delay="1400">A</span>
+  <span data-aos="fade-up" data-aos-delay="1500">N</span>
+  <span data-aos="fade-up" data-aos-delay="1600">D</span>
+  <span data-aos="fade-up" data-aos-delay="1700">L</span>
+  <span data-aos="fade-up" data-aos-delay="1800">E</span>
+  <span data-aos="fade-up" data-aos-delay="1900">L</span>
+  <span data-aos="fade-up" data-aos-delay="2100">I</span>
+  <span data-aos="fade-up" data-aos-delay="2200">G</span>
+  <span data-aos="fade-up" data-aos-delay="2300">H</span>
+  <span data-aos="fade-up" data-aos-delay="2400">T</span>
+</h1>
+
+
+
+
+<p id="demo"></p>
+
+<div id="body" class="body">
+  <form action="forms.php" method="post">
+    <label for="fullname"> <i class="fas fa-user"></i> Full Name </label>
+    <input type="text" id="fname" name="fullname" placeholder="Full Name..">
+
+    <label for="email"><i class="fas fa-envelope"></i> Email </label>
+    <input type="text" id="int" name="email" placeholder="Email">
+
+    <label for="state"> <i class="fas fa-map-marker-alt"></i> Address </label>
+    <input type="text" id="add" name="add" placeholder="Address">
+
+    <label for="country"> <i class="fas fa-globe"></i> Country</label>
+    <select id="country" name="country">
+      <option value="Nigeria">Nigeria</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+
+    <label for="interest"> <i class="fa-heart"></i> Interest</label>
+    <select id="interest" name="interest">
+        <option value="volunteer">Volunteer</option>
+        <option value="therapy">Specialized Therapy</option>
+      <option value="parent">Parent & Caregiver Training</option>
+      <option value="education">Specialized Education Programs</option>
+      <option value="others">Others</option>
+    </select>
+
+    
+    <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>#weTSR</h2>
+      </div>
+  
+      <div class="modal-body">
+        <img src="wetsr.webp" alt="weTSR" style="width: 400px; height: 400px; display: block; margin: 0 auto;">
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+    
+      
+    </footer>
+    </div><hr>
+    <footer><p style="font-size: 12px; padding-left: 40px;"><i><i class="fas fa-cogs"></i>Service rendered by GSC <i class="fas fa-globe"></i></i></p></footer>
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="form.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init(); // Initialize AOS library
+</script>
+
+<script>
+    const d = new Date();
+    const options = {
+      weekday: 'long',
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+    };
+    
+    document.getElementById("demo").innerHTML = d.toLocaleString('en-US', options);
+    </script>
+    
+
+</body>
+</html>

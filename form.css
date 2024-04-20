@@ -1,0 +1,159 @@
+body {
+    background-color: whitesmoke;
+    padding: 10px;
+    
+}
+
+#demo {
+    text-align: center;
+    color: navy;
+}
+
+
+.h {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 37px;
+    text-align: center;
+    color: navy;
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .h {
+      font-size: 25px; 
+    }
+  }
+  
+
+
+.body {
+    background-color: silver;
+  }
+  
+  
+
+
+.header {
+    text-align: center;
+    padding-top: 10px; 
+  }
+  
+  .logo {
+    width: 150px;
+    height: 170px;
+  }
+  
+
+
+
+  
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: navy;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+
+
+  
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  .modal-content {
+    background-color: whitesmoke; /* Sky blue background color */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .modal-header {
+    background-color: whitesmoke;
+    color: black; /* Black font color */
+    text-align: center;
+    padding-bottom: 0px;
+    border-bottom: opx solid black;
+  }
+  
+  .modal-header h2 {
+    padding-left: 30px;
+  }
+  
+  .close {
+    color: red; /* Red font color */
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  
+
+  .modal-body img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of the modal */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of the modal */
+    display: inline-block; /* Ensure the image aligns properly */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
