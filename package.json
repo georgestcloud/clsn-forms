@@ -1,0 +1,13 @@
+{
+    "name": "george-mailer",
+    "version": "1.0.0",
+    "description": "mailer-for-clsn",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "nodemailer": "^6.7.2"
+    }
+  }
+  
