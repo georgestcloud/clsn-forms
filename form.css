@@ -9,6 +9,13 @@ body {
     color: navy;
 }
 
+@media screen and (max-width: 800px) {
+  #demo {
+    font-size: 13px; 
+  }
+}
+
+
 
 .h {
     font-family: 'Times New Roman', Times, serif;
@@ -83,7 +90,6 @@ input[type=text], select {
 
   
 
-/* Modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -98,7 +104,7 @@ input[type=text], select {
   }
   
   .modal-content {
-    background-color: whitesmoke; /* Sky blue background color */
+    background-color: whitesmoke; 
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -108,7 +114,7 @@ input[type=text], select {
   
   .modal-header {
     background-color: whitesmoke;
-    color: black; /* Black font color */
+    color: black; 
     text-align: center;
     padding-bottom: 0px;
     border-bottom: opx solid black;
@@ -119,7 +125,7 @@ input[type=text], select {
   }
   
   .close {
-    color: red; /* Red font color */
+    color: red; 
     float: right;
     font-size: 35px;
     font-weight: bold;
@@ -141,9 +147,9 @@ input[type=text], select {
   
 
   .modal-body img {
-    max-width: 100%; /* Ensure the image doesn't exceed the width of the modal */
-    max-height: 100%; /* Ensure the image doesn't exceed the height of the modal */
-    display: inline-block; /* Ensure the image aligns properly */
+    max-width: 100%;
+    max-height: 100%; 
+    display: inline-block; 
   }
 
 
