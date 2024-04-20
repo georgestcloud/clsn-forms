@@ -71,3 +71,23 @@ const port = process.env.PORT || 3000;
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+
+
+transporter.sendMail({
+    from: formData.email,
+    to,
+    subject,
+    text: message
+  }, (error, info) => {
+    if (error) {
+      console.error('Error sending email:', error);
+      res.writeHead(500, {'Content-Type': 'text/plain'});
+      res.end('Error: Unable to send email.');
+    } else {
+      console.log('Email sent:', info.response);
+      res.writeHead(200, {'Content-Type': 'text/plain'});
+      res.end('Thank you for your submission. We will get back to you shortly.');
+    }
+  });
+  
